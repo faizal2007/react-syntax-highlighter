@@ -1,4 +1,4 @@
-export default {
+const styles = {
     "pre[class*=\"language-\"]": {
         "color": "#d4d4d4",
         "fontSize": "13px",

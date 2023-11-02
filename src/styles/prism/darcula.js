@@ -1,4 +1,4 @@
-export default {
+const styles = {
     "code[class*=\"language-\"]": {
         "color": "#a9b7c6",
         "fontFamily": "Consolas, Monaco, 'Andale Mono', monospace",

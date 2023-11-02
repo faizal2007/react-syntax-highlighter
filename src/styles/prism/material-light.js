@@ -1,4 +1,4 @@
-export default {
+const styles = {
     "code[class*=\"language-\"]": {
         "textAlign": "left",
         "whiteSpace": "pre",

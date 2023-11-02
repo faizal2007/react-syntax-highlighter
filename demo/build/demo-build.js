@@ -100762,6 +100762,7 @@ SyntaxHighlighter.alias = function (name, aliases) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _highlight__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./highlight */ "./src/highlight.js");
 /* harmony import */ var _styles_prism_prism__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/prism/prism */ "./src/styles/prism/prism.js");
+/* harmony import */ var _styles_prism_prism__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_prism_prism__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var refractor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! refractor */ "./node_modules/refractor/index.js");
 /* harmony import */ var refractor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(refractor__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _languages_prism_supported_languages__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./languages/prism/supported-languages */ "./src/languages/prism/supported-languages.js");
@@ -100769,7 +100770,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var highlighter = Object(_highlight__WEBPACK_IMPORTED_MODULE_0__["default"])(refractor__WEBPACK_IMPORTED_MODULE_2___default.a, _styles_prism_prism__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var highlighter = Object(_highlight__WEBPACK_IMPORTED_MODULE_0__["default"])(refractor__WEBPACK_IMPORTED_MODULE_2___default.a, _styles_prism_prism__WEBPACK_IMPORTED_MODULE_1___default.a);
 highlighter.supportedLanguages = _languages_prism_supported_languages__WEBPACK_IMPORTED_MODULE_3__["default"];
 /* harmony default export */ __webpack_exports__["default"] = (highlighter);
 
@@ -112947,12 +112948,10 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************!*\
   !*** ./src/styles/prism/prism.js ***!
   \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
+var styles = {
   "code[class*=\"language-\"]": {
     "color": "black",
     "background": "none",
@@ -113143,7 +113142,7 @@ __webpack_require__.r(__webpack_exports__);
   "italic": {
     "fontStyle": "italic"
   }
-});
+};
 
 /***/ })
 

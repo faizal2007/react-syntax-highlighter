@@ -1,4 +1,4 @@
-export default {
+const styles = {
     "code[class*=\"language-\"]": {
         "MozTabSize": "2",
         "OTabSize": "2",

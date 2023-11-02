@@ -46,8 +46,10 @@ function updateDocs(files) {
     getSimpleFilename(file)
   );
   const styles = availableStyleNames.map(name => `\n* ${camel(name)}`);
+  // const coy = require('./coy');
   const defaultExports = availableStyleNames.map(
-    name => `export { default as ${camel(name)} } from './${name}';\n`
+    // name => `export { default as ${camel(name)} } from './${name}';\n`
+    name => `const ${camel(name)} = require('./${name}');\n`
   );
   const styleMD = `## Available \`stylesheet\` props ${styles.join('')}`;
   fs.writeFile(
@@ -145,7 +147,7 @@ function createJavascriptStyleSheet(file, directory) {
         }, {});
       fs.writeFile(
         path.join(__dirname, `../src/styles/prism/${fileWithoutCSS}.js`),
-        `export default ${JSON.stringify(javacriptStylesheet, null, 4)}`,
+        `const styles = ${JSON.stringify(javacriptStylesheet, null, 4)}`,
         () => {}
       );
     }

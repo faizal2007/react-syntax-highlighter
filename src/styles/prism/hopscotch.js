@@ -1,4 +1,4 @@
-export default {
+const styles = {
     "code[class*=\"language-\"]": {
         "fontFamily": "\"Fira Mono\", Menlo, Monaco, \"Lucida Console\", \"Courier New\", Courier, monospace",
         "fontSize": "16px",

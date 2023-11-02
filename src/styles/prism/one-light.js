@@ -1,4 +1,4 @@
-export default {
+const styles = {
     "code[class*=\"language-\"]": {
         "background": "hsl(230, 1%, 98%)",
         "color": "hsl(230, 8%, 24%)",
